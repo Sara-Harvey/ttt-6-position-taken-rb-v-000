@@ -16,7 +16,9 @@ def move(board, index, value="X")
 
 def position_taken?(board, index)
 if board[index] == "X" or board[index] == "O"
-board[index] == " " or board[index] == "" or board[index] == nil
+return true
+if board[index] == " " or board[index] == "" or board[index] == nil
+return false
 end
 
 
